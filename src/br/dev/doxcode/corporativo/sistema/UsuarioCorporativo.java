@@ -64,13 +64,12 @@ public class UsuarioCorporativo implements Usuario {
 	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
 	 */
 	public UsuarioCorporativo() {
-
+		this.limpar();
 	}
 
 	/**
 	 * Método público para atribuir o ID do usuário corporativo.
 	 * Válido somente para números entre 0 e 999999.
-	 * 
 	 * 
 	 * @param id O ID do usuário corporativo.
 	 * @author Marcio Alves
@@ -147,5 +146,18 @@ public class UsuarioCorporativo implements Usuario {
 	@Override
 	public String getNome() {
 		return this.nome;
+	}
+
+	/**
+	 * Método público para limpar os atributos de um usuário corporativo.
+	 * 
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	@Override
+	public void limpar() {
+		this.id = 0;
+		this.codigo = "";
+		this.nome = "";
 	}
 }
