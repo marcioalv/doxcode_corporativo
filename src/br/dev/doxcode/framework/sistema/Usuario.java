@@ -74,4 +74,12 @@ public interface Usuario {
 	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
 	 */
 	public String getNome();
+	
+	/**
+	 * Método público para limpar os atributos do usuário.
+	 * 
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	public void limpar();
 }
