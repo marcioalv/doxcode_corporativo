@@ -14,7 +14,7 @@
 package br.dev.doxcode.framework.exception;
 
 /**
- * Exceção lançada para número negativos.
+ * Exceção lançada para argumentos numéricos negativos.
  * 
  * @author Marcio Alves
  * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
