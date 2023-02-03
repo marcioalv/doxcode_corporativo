@@ -76,6 +76,42 @@ public interface Usuario {
 	public String getNome();
 	
 	/**
+	 * Método público para atribuir o login do usuário.
+	 * 
+	 * @param login O login do usuário.
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	public void setLogin(String login);
+
+	/**
+	 * Método público para recuperar o login do usuário.
+	 * 
+	 * @return O login do usuário.
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	public String getLogin();
+
+	/**
+	 * Método público para atribuir a senha do usuário.
+	 * 
+	 * @param senha A senha do usuário.
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	public void setSenha(String senha);
+
+	/**
+	 * Método público para recuperar a senha do usuário.
+	 * 
+	 * @return A senha do usuário.
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	public String getSenha();	
+	
+	/**
 	 * Método público para limpar os atributos do usuário.
 	 * 
 	 * @author Marcio Alves
