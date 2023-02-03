@@ -72,6 +72,42 @@ public class UsuarioCorporativo implements Usuario {
 	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
 	 */
 	public static final int QUANTIDADE_MAXIMA_DIGITOS_ID = 6;
+	
+	/**
+	 * Constante pública indicando a quantidade máxima de caracteres para o código do
+	 * usuário corporativo.
+	 * 
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	public static final int QUANTIDADE_MAXIMA_CARACTERES_CODIGO = 25;
+	
+	/**
+	 * Constante pública indicando a quantidade máxima de caracteres para o nome do
+	 * usuário corporativo.
+	 * 
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	public static final int QUANTIDADE_MAXIMA_CARACTERES_NOME = 100;
+	
+	/**
+	 * Constante pública indicando a quantidade máxima de caracteres para o login do
+	 * usuário corporativo.
+	 * 
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	public static final int QUANTIDADE_MAXIMA_CARACTERES_LOGIN = 75;
+	
+	/**
+	 * Constante pública indicando a quantidade máxima de caracteres para a senha do
+	 * usuário corporativo.
+	 * 
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	public static final int QUANTIDADE_MAXIMA_CARACTERES_SENHA = 75;
 
 	/**
 	 * Construtor padrão somente limpa atributos.
@@ -125,6 +161,10 @@ public class UsuarioCorporativo implements Usuario {
 	 */
 	@Override
 	public void setCodigo(String codigo) {
+		if (codigo.length() > UsuarioCorporativo.QUANTIDADE_MAXIMA_CARACTERES_CODIGO) {
+			throw new LengthArgumentException("O tamanho máximo para o código do usuário corporativo foi excedido!");
+		}
+
 		this.codigo = codigo;
 	}
 
@@ -149,6 +189,10 @@ public class UsuarioCorporativo implements Usuario {
 	 */
 	@Override
 	public void setNome(String nome) {
+		if (nome.length() > UsuarioCorporativo.QUANTIDADE_MAXIMA_CARACTERES_NOME) {
+			throw new LengthArgumentException("O tamanho máximo para o nome do usuário corporativo foi excedido!");
+		}
+
 		this.nome = nome;
 	}
 
@@ -173,6 +217,10 @@ public class UsuarioCorporativo implements Usuario {
 	 */
 	@Override
 	public void setLogin(String login) {
+		if (login.length() > UsuarioCorporativo.QUANTIDADE_MAXIMA_CARACTERES_LOGIN) {
+			throw new LengthArgumentException("O tamanho máximo para o login do usuário corporativo foi excedido!");
+		}
+
 		this.login = login;
 	}
 
@@ -197,6 +245,10 @@ public class UsuarioCorporativo implements Usuario {
 	 */
 	@Override
 	public void setSenha(String senha) {
+		if (senha.length() > UsuarioCorporativo.QUANTIDADE_MAXIMA_CARACTERES_SENHA) {
+			throw new LengthArgumentException("O tamanho máximo para a senha do usuário corporativo foi excedido!");
+		}
+
 		this.senha = senha;
 	}
 
