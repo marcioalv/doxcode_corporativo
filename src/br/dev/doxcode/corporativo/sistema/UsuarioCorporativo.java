@@ -16,6 +16,7 @@ package br.dev.doxcode.corporativo.sistema;
 import br.dev.doxcode.framework.sistema.Usuario;
 import br.dev.doxcode.framework.exception.NegativeNumberArgumentException;
 import br.dev.doxcode.framework.exception.MaximumNumberArgumentException;
+import br.dev.doxcode.framework.exception.LengthArgumentException;
 
 /**
  * Classe pública implementando um usuário do sistema corporativo.
