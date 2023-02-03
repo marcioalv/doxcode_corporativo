@@ -14,7 +14,7 @@
 package br.dev.doxcode.framework.exception;
 
 /**
- * Exceção lançada para números maiores que o máximo permitido.
+ * Exceção lançada para argumentos numéricos maiores que o máximo permitido.
  * 
  * @author Marcio Alves
  * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
