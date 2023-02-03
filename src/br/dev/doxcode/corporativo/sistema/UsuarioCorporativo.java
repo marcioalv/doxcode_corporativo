@@ -49,6 +49,22 @@ public class UsuarioCorporativo implements Usuario {
 	private String nome;
 
 	/**
+	 * Atributo privado com o login do usuário corporativo.
+	 * 
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	private String login;
+
+	/**
+	 * Atributo privado com a senha do usuário corporativo.
+	 * 
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	private String senha;
+
+	/**
 	 * Constante pública indicando a quantidade máxima de dígitos para o ID do
 	 * usuário corporativo.
 	 * 
@@ -149,6 +165,54 @@ public class UsuarioCorporativo implements Usuario {
 	}
 
 	/**
+	 * Método público para atribuir o login do usuário corporativo.
+	 * 
+	 * @param login O login do usuário.
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	@Override
+	public void setLogin(String login) {
+		this.login = login;
+	}
+
+	/**
+	 * Método público para recuperar o login do usuário corporativo.
+	 * 
+	 * @return O login do usuário.
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	@Override
+	public String getLogin() {
+		return this.login;
+	}
+	
+	/**
+	 * Método público para atribuir a senha do usuário corporativo.
+	 * 
+	 * @param senha A senha do usuário.
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	@Override
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	/**
+	 * Método público para recuperar a senha do usuário corporativo.
+	 * 
+	 * @return A senha do usuário.
+	 * @author Marcio Alves
+	 * @version 1.0.0 Criado em 02/Fevereiro/2023 por Marcio Alves.
+	 */
+	@Override
+	public String getSenha() {
+		return this.senha;
+	}	
+
+	/**
 	 * Método público para limpar os atributos de um usuário corporativo.
 	 * 
 	 * @author Marcio Alves
@@ -159,5 +223,7 @@ public class UsuarioCorporativo implements Usuario {
 		this.id = 0;
 		this.codigo = "";
 		this.nome = "";
+		this.login = "";
+		this.senha = "";
 	}
 }
